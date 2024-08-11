@@ -1,0 +1,2 @@
+Climacare is a Machine Learning Model built with an android application that will allow users to make accurate predictions by entering Temperature and Precipitation readings and in return the model will return near accurate predictions on the possibility of either floods or drought occurring.
+To run the application, run the server file climacare.py and you may need to make some modifications to the ip address on the climacare.py code, Main activity.java, forecast.java and the chatbot activity.
