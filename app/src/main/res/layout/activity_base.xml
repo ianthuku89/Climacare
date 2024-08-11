@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Content container where other activities' content will be placed -->
+    <FrameLayout
+        android:id="@+id/activity_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer_layout" />
+
+    <!-- Footer -->
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Home Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:padding="4dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageButton
+                android:id="@+id/homeButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/home"
+                android:background="@android:color/transparent"
+                android:contentDescription="Home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- Forecast Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageButton
+                android:id="@+id/forecastButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/forecast"
+                android:background="@android:color/transparent"
+                android:contentDescription="Forecast" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forecast"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- ChatBot Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageButton
+                android:id="@+id/chatBotButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/help"
+                android:background="@android:color/transparent"
+                android:contentDescription="Help" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- History Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageButton
+                android:id="@+id/historyButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/history"
+                android:background="@android:color/transparent"
+                android:contentDescription="Prediction History" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- CallPage Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageButton
+                android:id="@+id/callPageButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/phone"
+                android:background="@android:color/transparent"
+                android:contentDescription="Emergency Contacts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

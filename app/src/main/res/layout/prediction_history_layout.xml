@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_background"
+    android:padding="16dp">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/headerImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/history"/><!-- Replace with your drawable -->
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:text="Prediction History"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+
+    <!-- Border between header and ListView -->
+    <View
+        android:id="@+id/headerDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/headerLayout"
+        android:background="@android:color/darker_gray" />
+
+    <!-- ListView for prediction history -->
+    <ListView
+        android:id="@+id/predictionHistoryListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/headerDivider"
+        android:layout_above="@id/clearButton"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Clear History Button -->
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:text="Clear History"
+        android:background="@drawable/button_background"/>
+
+</RelativeLayout>

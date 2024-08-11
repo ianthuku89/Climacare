@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/splashh"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/blue"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Climacare"
+        tools:targetApi="31">
+
+        <!-- SplashScreenActivity is set as the launcher activity -->
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- LoginActivity comes after the SplashScreenActivity -->
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+
+        <!-- Other activities -->
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PredictionHistoryActivity" />
+        <activity android:name=".ChatbotActivity" />
+        <activity android:name=".CallPageActivity" />
+        <activity android:name=".forecast" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

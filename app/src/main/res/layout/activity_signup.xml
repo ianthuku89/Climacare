@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/main_page_background"
+    android:padding="16dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/main_page_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Fill in the details below.."
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/signupUsernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Username"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:gravity="center"
+                android:background="@drawable/edit_text_background"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/signupPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textColorHint="@color/black"
+                android:background="@drawable/edit_text_background"
+                android:hint="Password"
+                android:fontFamily="sans-serif-medium"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Sign Up"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

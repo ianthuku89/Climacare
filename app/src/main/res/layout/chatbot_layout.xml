@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/introductionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Welcome to the Self-Help Portal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/spinnerCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/introductionTextView"
+        android:padding="4dp"
+        android:radius="16dp">
+
+        <Spinner
+            android:id="@+id/optionsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/sendChatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/spinnerCardView"
+        android:layout_centerHorizontal="true"
+        android:text="Send"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/chatResponseTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendChatButton"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textSize="16sp" />
+
+</RelativeLayout>

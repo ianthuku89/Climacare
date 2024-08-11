@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_background"
+    android:padding="16dp">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:hint="Location"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/boundary1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/locationEditText"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white" />
+
+
+    <Button
+        android:id="@+id/predictButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/boundary1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp"
+        android:text="Predict"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>
